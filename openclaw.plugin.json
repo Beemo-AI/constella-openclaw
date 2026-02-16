@@ -1,0 +1,28 @@
+{
+  "id": "constella-openclaw",
+  "name": "Constella",
+  "description": "Constella external API plugin (search + insert notes).",
+  "uiHints": {
+    "baseUrl": {
+      "label": "Constella Base URL",
+      "placeholder": "https://fastfind.app"
+    },
+    "apiKey": {
+      "label": "Constella API Key",
+      "sensitive": true,
+      "placeholder": "csk_..."
+    }
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "baseUrl": {
+        "type": "string"
+      },
+      "apiKey": {
+        "type": "string"
+      }
+    }
+  }
+}

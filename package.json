@@ -1,0 +1,25 @@
+{
+  "name": "@openclaw/constella-openclaw",
+  "version": "0.1.0",
+  "description": "OpenClaw plugin for Constella search and note insertion.",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "@sinclair/typebox": "^0.34.48"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.2.13"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "install": {
+      "npmSpec": "@openclaw/constella-openclaw",
+      "defaultChoice": "npm"
+    }
+  }
+}
